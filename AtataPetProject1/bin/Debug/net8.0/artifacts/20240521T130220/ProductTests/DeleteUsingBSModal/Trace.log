@@ -1,0 +1,203 @@
+2024-05-21 13:02:20.458 DEBUG Starting test: AtataPetProject1.ProductTests.DeleteUsingBSModal
+2024-05-21 13:02:20.579 TRACE > Initialize AtataContext
+2024-05-21 13:02:20.599 TRACE - Use: "Atata.json" config
+2024-05-21 13:02:20.599 TRACE - Use: "Atata.local.json" config
+2024-05-21 13:02:20.599 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 13:02:20.602 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 13:02:20.602 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 13:02:20.603 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 13:02:20.604 TRACE - Set: Culture=en-US
+2024-05-21 13:02:20.605 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T130220\ProductTests\DeleteUsingBSModal
+2024-05-21 13:02:20.607 TRACE - > Initialize Driver
+2024-05-21 13:02:20.611 TRACE - - Created ChromeDriverService { Port=59326, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 13:02:21.798 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=f9424f72b37d7ca68f5853883d61092e }
+2024-05-21 13:02:21.803 TRACE - < Initialize Driver (1.193s)
+2024-05-21 13:02:21.804 TRACE < Initialize AtataContext (1.224s)
+2024-05-21 13:02:21.848  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-21 13:02:22.863  INFO < Go to "Products" page by URL https://demo.atata.io/products (1.014s)
+2024-05-21 13:02:22.902 TRACE > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:22.918 TRACE < Find element by XPath ".//table" in ChromeDriver (0.015s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:22.919 TRACE > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:22.931 TRACE < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.011s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }]
+2024-05-21 13:02:22.940  INFO > Click "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button
+2024-05-21 13:02:22.941 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button
+2024-05-21 13:02:22.953 TRACE - - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:22.961 TRACE - - < Find element by XPath ".//table" in ChromeDriver (0.007s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:22.962 TRACE - - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:22.968 TRACE - - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.005s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }]
+2024-05-21 13:02:22.971 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element
+2024-05-21 13:02:22.975 TRACE - - - > Select column header texts of "Products" table
+2024-05-21 13:02:22.978 TRACE - - - - > Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:22.987 TRACE - - - - < Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.009s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:22.990 TRACE - - - - > Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:23.001 TRACE - - - - < Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }] (0.010s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:23.004 TRACE - - - < Select column header texts of "Products" table (0.028s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:23.007 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }
+2024-05-21 13:02:23.017 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 } (0.009s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.16 }
+2024-05-21 13:02:23.030 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element (0.058s) >> "Table"
+2024-05-21 13:02:23.033 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element
+2024-05-21 13:02:23.034 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }
+2024-05-21 13:02:23.044 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 } (0.009s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.17 }
+2024-05-21 13:02:23.050 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element (0.016s) >> "Chair"
+2024-05-21 13:02:23.053 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element
+2024-05-21 13:02:23.054 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }
+2024-05-21 13:02:23.059 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 } (0.005s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.18 }
+2024-05-21 13:02:23.064 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element (0.011s) >> "Desk"
+2024-05-21 13:02:23.065 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element
+2024-05-21 13:02:23.066 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }
+2024-05-21 13:02:23.074 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 } (0.007s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.19 }
+2024-05-21 13:02:23.079 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element (0.013s) >> "Wardrobe"
+2024-05-21 13:02:23.080 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element
+2024-05-21 13:02:23.081 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }
+2024-05-21 13:02:23.087 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 } (0.006s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.20 }
+2024-05-21 13:02:23.093 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element (0.012s) >> "Armchair"
+2024-05-21 13:02:23.094 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete Using BS Modal']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }
+2024-05-21 13:02:23.105 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete Using BS Modal']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 } (0.010s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 }
+2024-05-21 13:02:23.107 TRACE - - > Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 }
+2024-05-21 13:02:23.144 TRACE - - < Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 } (0.036s)
+2024-05-21 13:02:23.144 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button (0.202s)
+2024-05-21 13:02:23.144  INFO < Click "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button (0.204s)
+2024-05-21 13:02:23.149 TRACE Cleared column header texts cache of "Products" table
+2024-05-21 13:02:23.150  INFO > Go to "Deletion Confirmation" modal
+2024-05-21 13:02:23.155  INFO < Go to "Deletion Confirmation" modal (0.005s)
+2024-05-21 13:02:23.155  INFO > Click "Cancel" button
+2024-05-21 13:02:23.156 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Cancel" button
+2024-05-21 13:02:23.158 TRACE - - > Find visible element by XPath ".//div[contains(concat(' ', normalize-space(@class), ' '), ' modal ')][.//*[contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')][normalize-space(.) = 'Confirmation']]" in ChromeDriver
+2024-05-21 13:02:23.693 TRACE - - < Find visible element by XPath ".//div[contains(concat(' ', normalize-space(@class), ' '), ' modal ')][.//*[contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')][normalize-space(.) = 'Confirmation']]" in ChromeDriver (0.535s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 }
+2024-05-21 13:02:23.694 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Cancel' or normalize-space(@value) = 'Cancel']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 }
+2024-05-21 13:02:23.708 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Cancel' or normalize-space(@value) = 'Cancel']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 } (0.013s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.23 }
+2024-05-21 13:02:23.709 TRACE - - > Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.23 }
+2024-05-21 13:02:23.774 TRACE - - < Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.23 } (0.064s)
+2024-05-21 13:02:23.774 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Cancel" button (0.618s)
+2024-05-21 13:02:23.774  INFO < Click "Cancel" button (0.618s)
+2024-05-21 13:02:23.775  INFO > Go to "Products" page
+2024-05-21 13:02:23.777  INFO < Go to "Products" page (0.001s)
+2024-05-21 13:02:23.780  INFO > Assert: "Products" table / rows / [Name == "Armchair"] item should be present
+2024-05-21 13:02:23.782 TRACE - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:23.793 TRACE - < Find element by XPath ".//table" in ChromeDriver (0.011s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.793 TRACE - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.806 TRACE - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.012s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }]
+2024-05-21 13:02:23.807 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element
+2024-05-21 13:02:23.808 TRACE - - > Select column header texts of "Products" table
+2024-05-21 13:02:23.808 TRACE - - - > Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.816 TRACE - - - < Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.007s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:23.817 TRACE - - - > Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:23.828 TRACE - - - < Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }] (0.010s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:23.828 TRACE - - < Select column header texts of "Products" table (0.020s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:23.829 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }
+2024-05-21 13:02:23.843 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 } (0.014s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.16 }
+2024-05-21 13:02:23.855 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element (0.048s) >> "Table"
+2024-05-21 13:02:23.856 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element
+2024-05-21 13:02:23.859 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }
+2024-05-21 13:02:23.868 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 } (0.009s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.17 }
+2024-05-21 13:02:23.877 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element (0.020s) >> "Chair"
+2024-05-21 13:02:23.878 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element
+2024-05-21 13:02:23.878 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }
+2024-05-21 13:02:23.886 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 } (0.007s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.18 }
+2024-05-21 13:02:23.891 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element (0.013s) >> "Desk"
+2024-05-21 13:02:23.892 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element
+2024-05-21 13:02:23.893 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }
+2024-05-21 13:02:23.897 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 } (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.19 }
+2024-05-21 13:02:23.905 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element (0.012s) >> "Wardrobe"
+2024-05-21 13:02:23.906 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element
+2024-05-21 13:02:23.906 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }
+2024-05-21 13:02:23.911 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 } (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.20 }
+2024-05-21 13:02:23.915 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element (0.009s) >> "Armchair"
+2024-05-21 13:02:23.917  INFO < Assert: "Products" table / rows / [Name == "Armchair"] item should be present (0.137s)
+2024-05-21 13:02:23.923  INFO > Assert: "Products" table / rows count should equal 5
+2024-05-21 13:02:23.925 TRACE - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:23.929 TRACE - < Find element by XPath ".//table" in ChromeDriver (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.930 TRACE - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.938 TRACE - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.008s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }]
+2024-05-21 13:02:23.939  INFO < Assert: "Products" table / rows count should equal 5 (0.016s)
+2024-05-21 13:02:23.940  INFO > Click "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button
+2024-05-21 13:02:23.940 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button
+2024-05-21 13:02:23.941 TRACE - - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:23.945 TRACE - - < Find element by XPath ".//table" in ChromeDriver (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.946 TRACE - - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:23.953 TRACE - - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.007s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }]
+2024-05-21 13:02:23.954 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element
+2024-05-21 13:02:23.955 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }
+2024-05-21 13:02:23.959 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 } (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.16 }
+2024-05-21 13:02:23.964 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element (0.010s) >> "Table"
+2024-05-21 13:02:23.965 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element
+2024-05-21 13:02:23.965 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }
+2024-05-21 13:02:23.973 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 } (0.008s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.17 }
+2024-05-21 13:02:23.978 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element (0.013s) >> "Chair"
+2024-05-21 13:02:23.979 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element
+2024-05-21 13:02:23.979 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }
+2024-05-21 13:02:23.987 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 } (0.007s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.18 }
+2024-05-21 13:02:23.992 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element (0.012s) >> "Desk"
+2024-05-21 13:02:23.992 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element
+2024-05-21 13:02:23.993 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }
+2024-05-21 13:02:23.997 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 } (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.19 }
+2024-05-21 13:02:24.004 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element (0.011s) >> "Wardrobe"
+2024-05-21 13:02:24.005 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element
+2024-05-21 13:02:24.005 TRACE - - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }
+2024-05-21 13:02:24.010 TRACE - - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 } (0.004s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.20 }
+2024-05-21 13:02:24.014 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 5th item / "Name" element (0.009s) >> "Armchair"
+2024-05-21 13:02:24.015 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete Using BS Modal']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 }
+2024-05-21 13:02:24.023 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete Using BS Modal']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.11 } (0.008s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 }
+2024-05-21 13:02:24.023 TRACE - - > Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 }
+2024-05-21 13:02:24.113 TRACE - - < Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.21 } (0.089s)
+2024-05-21 13:02:24.113 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button (0.173s)
+2024-05-21 13:02:24.114  INFO < Click "Products" table / rows / [Name == "Armchair"] item / "Delete Using BS Modal" button (0.173s)
+2024-05-21 13:02:24.114 TRACE Cleared column header texts cache of "Products" table
+2024-05-21 13:02:24.114  INFO > Go to "Deletion Confirmation" modal
+2024-05-21 13:02:24.115  INFO < Go to "Deletion Confirmation" modal (0.001s)
+2024-05-21 13:02:24.116  INFO > Click "Delete" button
+2024-05-21 13:02:24.117 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Delete" button
+2024-05-21 13:02:24.120 TRACE - - > Find visible element by XPath ".//div[contains(concat(' ', normalize-space(@class), ' '), ' modal ')][.//*[contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')][normalize-space(.) = 'Confirmation']]" in ChromeDriver
+2024-05-21 13:02:24.654 TRACE - - < Find visible element by XPath ".//div[contains(concat(' ', normalize-space(@class), ' '), ' modal ')][.//*[contains(concat(' ', normalize-space(@class), ' '), ' modal-title ')][normalize-space(.) = 'Confirmation']]" in ChromeDriver (0.534s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 }
+2024-05-21 13:02:24.655 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete' or normalize-space(@value) = 'Delete']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 }
+2024-05-21 13:02:24.664 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Delete' or normalize-space(@value) = 'Delete']" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.22 } (0.009s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.24 }
+2024-05-21 13:02:24.665 TRACE - - > Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.24 }
+2024-05-21 13:02:24.694 TRACE - - < Click element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.24 } (0.028s)
+2024-05-21 13:02:24.694 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Delete" button (0.577s)
+2024-05-21 13:02:24.694  INFO < Click "Delete" button (0.578s)
+2024-05-21 13:02:24.695  INFO > Go to "Products" page
+2024-05-21 13:02:24.695  INFO < Go to "Products" page (0.000s)
+2024-05-21 13:02:24.698  INFO > Assert: "Products" table / rows / [Name == "Armchair"] item should not be present
+2024-05-21 13:02:24.702 TRACE - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:24.708 TRACE - < Find element by XPath ".//table" in ChromeDriver (0.006s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.709 TRACE - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.714 TRACE - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.005s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }]
+2024-05-21 13:02:24.728 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element
+2024-05-21 13:02:24.729 TRACE - - > Select column header texts of "Products" table
+2024-05-21 13:02:24.729 TRACE - - - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:24.738 TRACE - - - < Find element by XPath ".//table" in ChromeDriver (0.008s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.738 TRACE - - - > Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.744 TRACE - - - < Find elements by XPath ".//th" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.005s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:24.744 TRACE - - - > Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }]
+2024-05-21 13:02:24.751 TRACE - - - < Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.12 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.13 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.14 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.15 }] (0.006s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:24.752 TRACE - - < Select column header texts of "Products" table (0.023s) >> ["Name", "Price", "Amount", ""]
+2024-05-21 13:02:24.753 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }
+2024-05-21 13:02:24.759 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 } (0.006s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.16 }
+2024-05-21 13:02:24.766 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Name" element (0.037s) >> "Table"
+2024-05-21 13:02:24.770 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element
+2024-05-21 13:02:24.771 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }
+2024-05-21 13:02:24.776 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 } (0.005s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.17 }
+2024-05-21 13:02:24.782 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 2nd item / "Name" element (0.012s) >> "Chair"
+2024-05-21 13:02:24.786 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element
+2024-05-21 13:02:24.787 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }
+2024-05-21 13:02:24.792 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 } (0.005s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.18 }
+2024-05-21 13:02:24.799 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 3rd item / "Name" element (0.013s) >> "Desk"
+2024-05-21 13:02:24.802 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element
+2024-05-21 13:02:24.803 TRACE - - > Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }
+2024-05-21 13:02:24.808 TRACE - - < Find element by XPath ".//td[1]/descendant-or-self::*" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 } (0.005s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.19 }
+2024-05-21 13:02:24.813 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 4th item / "Name" element (0.011s) >> "Wardrobe"
+2024-05-21 13:02:24.814  INFO < Assert: "Products" table / rows / [Name == "Armchair"] item should not be present (0.115s)
+2024-05-21 13:02:24.814  INFO > Assert: "Products" table / rows count should equal 4
+2024-05-21 13:02:24.815 TRACE - > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 13:02:24.822 TRACE - < Find element by XPath ".//table" in ChromeDriver (0.006s) >> Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.822 TRACE - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 }
+2024-05-21 13:02:24.827 TRACE - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.6 } (0.004s) >> [Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.7 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.8 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.9 }, Element { Id=f.A3C6A8BBAF7F2511EC6AB1825C8CC6E3.d.0774F9C2E5814CC12DC5C0A8645CB0F8.e.10 }]
+2024-05-21 13:02:24.827  INFO < Assert: "Products" table / rows count should equal 4 (0.013s)
+2024-05-21 13:02:24.828 TRACE > Deinitialize AtataContext
+2024-05-21 13:02:24.842 TRACE - Cleared column header texts cache of "Products" table
+2024-05-21 13:02:25.132 TRACE < Deinitialize AtataContext (0.304s)
+2024-05-21 13:02:25.138 DEBUG Finished test
+      Total time: 4.727s
+  Initialization: 1.398s | 29.6 %
+       Test body: 3.023s | 64.0 %
+Deinitialization: 0.304s |  6.4 %

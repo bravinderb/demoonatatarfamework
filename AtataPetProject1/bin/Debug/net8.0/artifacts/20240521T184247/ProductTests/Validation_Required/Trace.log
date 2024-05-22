@@ -1,0 +1,32 @@
+2024-05-21 18:42:50.594 DEBUG Starting test: AtataPetProject1.ProductTests.Validation_Required
+2024-05-21 18:42:50.599 TRACE > Initialize AtataContext
+2024-05-21 18:42:50.600 TRACE - Use: "Atata.json" config
+2024-05-21 18:42:50.600 TRACE - Use: "Atata.local.json" config
+2024-05-21 18:42:50.600 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 18:42:50.600 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 18:42:50.601 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 18:42:50.601 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 18:42:50.601 TRACE - Set: Culture=en-US
+2024-05-21 18:42:50.601 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T184247\ProductTests\Validation_Required
+2024-05-21 18:42:50.602 TRACE - > Initialize Driver
+2024-05-21 18:42:50.605 TRACE - - Created ChromeDriverService { Port=50973, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 18:42:52.169 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=ec9a1221407856516ee0eea266bbe2c6 }
+2024-05-21 18:42:52.171 TRACE - < Initialize Driver (1.568s)
+2024-05-21 18:42:52.171 TRACE < Initialize AtataContext (1.571s)
+2024-05-21 18:42:52.180  INFO > Aggregate assert "Products" page
+2024-05-21 18:42:52.204 ERROR - System.NullReferenceException: Object reference not set to an instance of an object.
+   at AtataPetProject1.ProductTests.<>c.<Validation_Required>b__1_0(ProductsPage page) in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\ProductTests.cs:line 27
+   at Atata.PageObject`1.<>c__DisplayClass71_0.<AggregateAssert>b__0()
+   at Atata.AtataContext.<>c__DisplayClass215_0.<AggregateAssert>b__1()
+2024-05-21 18:42:52.206  INFO < Aggregate assert "Products" page (0.026s) >> System.NullReferenceException: Object reference not set to an instance of an object.
+2024-05-21 18:42:52.226 TRACE > Deinitialize AtataContext
+2024-05-21 18:42:52.269 TRACE - > Take screenshot #01 Failed
+2024-05-21 18:42:52.440 TRACE - < Take screenshot #01 Failed (0.170s) >> "01 - Failed.png"
+2024-05-21 18:42:52.442 TRACE - > Take page snapshot #01 Failed
+2024-05-21 18:42:52.665 TRACE - < Take page snapshot #01 Failed (0.223s) >> "01 - Failed.mhtml"
+2024-05-21 18:42:53.141 TRACE < Deinitialize AtataContext (0.914s)
+2024-05-21 18:42:53.145 DEBUG Finished test
+      Total time: 2.550s
+  Initialization: 1.580s | 62.0 %
+       Test body: 0.054s |  2.1 %
+Deinitialization: 0.915s | 35.9 %

@@ -1,0 +1,32 @@
+2024-05-21 14:30:49.427 DEBUG Starting test: AtataPetProject1.ProductTests.Validation_Required
+2024-05-21 14:30:49.431 TRACE > Initialize AtataContext
+2024-05-21 14:30:49.432 TRACE - Use: "Atata.json" config
+2024-05-21 14:30:49.432 TRACE - Use: "Atata.local.json" config
+2024-05-21 14:30:49.432 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 14:30:49.433 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 14:30:49.433 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 14:30:49.433 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 14:30:49.433 TRACE - Set: Culture=en-US
+2024-05-21 14:30:49.434 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T143046\ProductTests\Validation_Required
+2024-05-21 14:30:49.435 TRACE - > Initialize Driver
+2024-05-21 14:30:49.435 TRACE - - Created ChromeDriverService { Port=65255, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 14:30:50.748 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=0855ae194b794672df6361033ecb6c46 }
+2024-05-21 14:30:50.748 TRACE - < Initialize Driver (1.313s)
+2024-05-21 14:30:50.749 TRACE < Initialize AtataContext (1.317s)
+2024-05-21 14:30:50.750  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-21 14:30:50.980  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.229s)
+2024-05-21 14:30:50.981  INFO > Click "Sign In" button
+2024-05-21 14:30:50.981 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button
+2024-05-21 14:30:50.984 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver
+2024-05-21 14:30:51.512 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver (0.527s) >> Element { Id=f.9528E35D20C786F4F600A7408230CAA2.d.95CB4D8880177A7AD83D4965B24E9976.e.7 }
+2024-05-21 14:30:51.512 TRACE - - > Click element { Id=f.9528E35D20C786F4F600A7408230CAA2.d.95CB4D8880177A7AD83D4965B24E9976.e.7 }
+2024-05-21 14:30:51.552 TRACE - - < Click element { Id=f.9528E35D20C786F4F600A7408230CAA2.d.95CB4D8880177A7AD83D4965B24E9976.e.7 } (0.039s)
+2024-05-21 14:30:51.553 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button (0.571s)
+2024-05-21 14:30:51.553  INFO < Click "Sign In" button (0.572s)
+2024-05-21 14:30:51.554 TRACE > Deinitialize AtataContext
+2024-05-21 14:30:51.879 TRACE < Deinitialize AtataContext (0.324s)
+2024-05-21 14:30:51.882 DEBUG Finished test
+      Total time: 2.455s
+  Initialization: 1.325s | 54.0 %
+       Test body: 0.805s | 32.8 %
+Deinitialization: 0.325s | 13.2 %

@@ -1,0 +1,109 @@
+2024-05-22 00:31:56.229 DEBUG Starting test: AtataPetProject1.ProductTests.Validation_Required
+2024-05-22 00:31:56.352 TRACE > Initialize AtataContext
+2024-05-22 00:31:56.377 TRACE - Use: "Atata.json" config
+2024-05-22 00:31:56.377 TRACE - Use: "Atata.local.json" config
+2024-05-22 00:31:56.378 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-22 00:31:56.380 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-22 00:31:56.380 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-22 00:31:56.380 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-22 00:31:56.380 TRACE - Set: Culture=en-US
+2024-05-22 00:31:56.381 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240522T003156\ProductTests\Validation_Required
+2024-05-22 00:31:56.382 TRACE - > Initialize Driver
+2024-05-22 00:31:56.387 TRACE - - Created ChromeDriverService { Port=50538, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-22 00:31:57.443 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=b0893d422ca49b002491d5e557a17002 }
+2024-05-22 00:31:57.449 TRACE - < Initialize Driver (1.064s)
+2024-05-22 00:31:57.450 TRACE < Initialize AtataContext (1.097s)
+2024-05-22 00:31:57.501  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-22 00:31:57.732  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.230s)
+2024-05-22 00:31:57.742 TRACE > Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page
+2024-05-22 00:31:57.745  INFO - > Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval
+2024-05-22 00:31:59.777  INFO - < Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval (2.032s)
+2024-05-22 00:31:59.779  INFO - > Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval
+2024-05-22 00:31:59.788  INFO - < Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval (0.008s)
+2024-05-22 00:31:59.789 TRACE < Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page (2.047s)
+2024-05-22 00:31:59.792 TRACE > Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page
+2024-05-22 00:31:59.798  INFO - > Assert: title should equal "Products - Atata Sample App"
+2024-05-22 00:31:59.807  INFO - < Assert: title should equal "Products - Atata Sample App" (0.009s)
+2024-05-22 00:31:59.808 TRACE < Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page (0.015s)
+2024-05-22 00:31:59.810  INFO > Aggregate assert "Products" page
+2024-05-22 00:31:59.811  INFO - > Assert: title should contain "Atata"
+2024-05-22 00:31:59.815  INFO - < Assert: title should contain "Atata" (0.004s)
+2024-05-22 00:31:59.817  INFO - > Assert: "Header" <h1> heading content should contain "Atata"
+2024-05-22 00:31:59.819 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:31:59.832 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:31:59.851 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.018s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:31:59.866 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.047s) >> "Products"
+2024-05-22 00:32:00.322 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:00.323 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:00.441 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.117s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:00.515 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.192s) >> "Products"
+2024-05-22 00:32:00.828 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:00.829 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:00.852 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.022s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:00.875 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.046s) >> "Products"
+2024-05-22 00:32:01.330 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:01.331 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:01.342 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.011s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:01.350 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.020s) >> "Products"
+2024-05-22 00:32:01.844 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:01.845 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:01.856 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.010s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:01.866 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.021s) >> "Products"
+2024-05-22 00:32:02.354 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:02.354 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:02.360 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.005s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:02.366 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.011s) >> "Products"
+2024-05-22 00:32:02.853 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:02.854 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:02.864 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.009s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:02.876 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.022s) >> "Products"
+2024-05-22 00:32:03.365 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:03.366 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:03.380 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.013s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:03.386 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.020s) >> "Products"
+2024-05-22 00:32:03.876 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:03.877 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:03.890 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.012s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:03.898 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.022s) >> "Products"
+2024-05-22 00:32:04.389 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:04.390 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:04.400 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.009s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:04.409 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.019s) >> "Products"
+2024-05-22 00:32:04.828 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:04.828 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:04.838 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.010s) >> Element { Id=f.2D9FCD9A18E38458219468A40CD388B4.d.EC9FF71B45A41799B14EBA74D1F40CE0.e.5 }
+2024-05-22 00:32:04.846 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.018s) >> "Products"
+2024-05-22 00:32:04.855 ERROR - - Wrong "Header" <h1> heading content
+Expected: should contain "Atata"
+  Actual: "Products"
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IObjectVerificationProviderExtensions.<>c__DisplayClass5_0`2.<Satisfy>g__ExecuteVerification|0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.VerificationUtils.Verify[TData,TOwner](IObjectVerificationProvider`2 verifier, Action verificationAction, String expectedMessage, TData[] arguments)
+   at Atata.IObjectVerificationProviderExtensions.Satisfy[TObject,TOwner](IObjectVerificationProvider`2 verifier, Func`2 predicate, String message, TObject[] args)
+   at Atata.IObjectVerificationProviderExtensions.Contain[TOwner](IObjectVerificationProvider`2 verifier, String expected)
+   at AtataPetProject1.ProductTests.<>c.<Validation_Required>b__1_0(ProductsPage x) in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\ProductTests.cs:line 27
+   at Atata.PageObject`1.<>c__DisplayClass71_0.<AggregateAssert>b__0()
+   at Atata.AtataContext.<>c__DisplayClass215_0.<AggregateAssert>b__1()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.AtataContext.<>c__DisplayClass215_0.<AggregateAssert>b__0()
+   at NUnit.Framework.Assert.Multiple(TestDelegate testDelegate)
+   at Atata.MethodInfoExtensions.InvokeStaticAsLambda(MethodInfo method, Object[] args)
+   at Atata.NUnitAdapter.AssertMultiple(Action action)
+   at Atata.NUnitAggregateAssertionStrategy.Assert(Action action)
+   at Atata.AtataContext.AggregateAssert(Action action, String assertionScopeName)
+   at Atata.PageObject`1.AggregateAssert(Action`1 action, String assertionScopeName)
+   at AtataPetProject1.ProductTests.Validation_Required() in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\ProductTests.cs:line 26
+2024-05-22 00:32:04.856  INFO - < Assert: "Header" <h1> heading content should contain "Atata" (5.039s)
+2024-05-22 00:32:04.857  INFO < Aggregate assert "Products" page (5.046s)
+2024-05-22 00:32:04.868 TRACE > Deinitialize AtataContext
+2024-05-22 00:32:04.879 TRACE - > Take screenshot #01 Failed
+2024-05-22 00:32:05.013 TRACE - < Take screenshot #01 Failed (0.134s) >> "01 Products page - Failed.png"
+2024-05-22 00:32:05.014 TRACE - > Take page snapshot #01 Failed
+2024-05-22 00:32:05.124 TRACE - < Take page snapshot #01 Failed (0.109s) >> "01 Products page - Failed.mhtml"
+2024-05-22 00:32:05.540 TRACE < Deinitialize AtataContext (0.672s)
+2024-05-22 00:32:05.543 DEBUG Finished test
+      Total time: 9.373s
+  Initialization: 1.283s | 13.7 %
+       Test body: 7.417s | 79.1 %
+Deinitialization: 0.672s |  7.2 %

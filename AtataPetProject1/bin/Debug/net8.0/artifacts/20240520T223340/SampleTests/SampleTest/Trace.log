@@ -1,0 +1,26 @@
+2024-05-20 22:33:40.627 DEBUG Starting test: AtataPetProject1.SampleTests.SampleTest
+2024-05-20 22:33:40.798 TRACE > Initialize AtataContext
+2024-05-20 22:33:40.829 TRACE - Use: "Atata.json" config
+2024-05-20 22:33:40.830 TRACE - Use: "Atata.local.json" config
+2024-05-20 22:33:40.830 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-20 22:33:40.833 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-20 22:33:40.834 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-20 22:33:40.834 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-20 22:33:40.837 TRACE - Set: Culture=en-US
+2024-05-20 22:33:40.840 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240520T223340\SampleTests\SampleTest
+2024-05-20 22:33:40.841 TRACE - > Initialize Driver
+2024-05-20 22:33:40.851 TRACE - - Created ChromeDriverService { Port=55998, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-20 22:33:42.357 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=f1aab941f51c3b5c1185627b07a7df83 }
+2024-05-20 22:33:42.368 TRACE - < Initialize Driver (1.519s)
+2024-05-20 22:33:42.370 TRACE < Initialize AtataContext (1.572s)
+2024-05-20 22:33:42.467  INFO > Go to "Home" page by URL https://demo.atata.io/Products
+2024-05-20 22:33:43.200  INFO < Go to "Home" page by URL https://demo.atata.io/Products (0.733s)
+2024-05-20 22:33:43.214  INFO > Assert: title should contain "Atata Sample App"
+2024-05-20 22:33:43.231  INFO < Assert: title should contain "Atata Sample App" (0.016s)
+2024-05-20 22:33:43.234 TRACE > Deinitialize AtataContext
+2024-05-20 22:33:43.897 TRACE < Deinitialize AtataContext (0.662s)
+2024-05-20 22:33:43.903 DEBUG Finished test
+      Total time: 3.352s
+  Initialization: 1.824s | 54.4 %
+       Test body: 0.862s | 25.7 %
+Deinitialization: 0.664s | 19.8 %

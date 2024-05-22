@@ -1,0 +1,64 @@
+2024-05-21 15:59:15.218 DEBUG Starting test: AtataPetProject1.ProductTests.DeleteUsingBSModal
+2024-05-21 15:59:15.235 TRACE > Initialize AtataContext
+2024-05-21 15:59:15.236 TRACE - Use: "Atata.json" config
+2024-05-21 15:59:15.237 TRACE - Use: "Atata.local.json" config
+2024-05-21 15:59:15.237 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 15:59:15.238 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 15:59:15.240 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 15:59:15.241 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 15:59:15.241 TRACE - Set: Culture=en-US
+2024-05-21 15:59:15.242 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T155859\ProductTests\DeleteUsingBSModal
+2024-05-21 15:59:15.243 TRACE - > Initialize Driver
+2024-05-21 15:59:15.245 TRACE - - Created ChromeDriverService { Port=53973, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 15:59:20.851 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=344311f626acce08e3cae29a0866401f }
+2024-05-21 15:59:20.855 TRACE - < Initialize Driver (5.612s)
+2024-05-21 15:59:20.857 TRACE < Initialize AtataContext (5.621s)
+2024-05-21 15:59:20.914  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-21 15:59:31.121  INFO < Go to "Products" page by URL https://demo.atata.io/products (10.206s)
+2024-05-21 15:59:31.184 TRACE > Find element by XPath ".//table" in ChromeDriver
+2024-05-21 15:59:36.227 TRACE < Find element by XPath ".//table" in ChromeDriver (5.043s) >> Atata.ElementNotFoundException: Unable to locate element:...
+2024-05-21 15:59:36.249 TRACE > Deinitialize AtataContext
+2024-05-21 15:59:36.293 ERROR - Atata.ElementNotFoundException : Unable to locate element:
+- By: XPath ".//table"
+- Search time: 5.039s
+- Search options: {Visibility=Any, Timeout=5s, RetryInterval=0.5s, IsSafely=False}
+   at Atata.ExtendedSearchContext`1.Find(By by)
+   at Atata.ExtendedSearchContext`1.FindElement(By by)
+   at Atata.ISearchContextExtensions.Get[T](T searchContext, By by)
+   at Atata.ISearchContextLoggingExtensions.<>c__DisplayClass0_0.<GetWithLogging>b__0()
+   at Atata.LogManager.ExecuteSection[TResult](LogSection section, Func`1 function)
+   at Atata.ISearchContextLoggingExtensions.GetWithLogging(ISearchContext searchContext, By by)
+   at Atata.XPathComponentScopeFindResult.Get(String xPathCondition)
+   at Atata.StrategyScopeLocator.<>c__DisplayClass3_0.<GetElement>b__0(XPathComponentScopeFindResult x)
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Func`2 predicate, Boolean& found)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at Atata.StrategyScopeLocator.GetElement(SearchOptions searchOptions, String xPathCondition)
+   at Atata.UIComponent`1.OnGetScopeElement(SearchOptions searchOptions)
+   at Atata.StaleSafely.Execute[TResult](Func`2 action, SearchOptions options, Action onExceptionCallback)
+   at Atata.UIComponent.GetScopeElement(SearchOptions searchOptions)
+   at Atata.UIComponent.OnGetScopeContext(SearchOptions searchOptions)
+   at Atata.UIComponent.GetScopeContext(SearchOptions searchOptions)
+   at Atata.ScopeSourceExtensions.GetScopeContext(ScopeSource scopeSource, UIComponent component, SearchOptions options)
+   at Atata.StrategyScopeLocatorExecutor.Execute(StrategyScopeLocatorExecutionData executionData)
+   at Atata.StrategyScopeLocator.GetElements(SearchOptions searchOptions, String xPathCondition)
+   at Atata.ControlList`2.<>c__DisplayClass81_0.<GetItemElements>g__DoGetItemElements|0()
+   at Atata.ControlList`2.GetItemElements(SearchOptions searchOptions, String extraXPath)
+   at Atata.ControlList`2.GetCount()
+   at Atata.DynamicObjectSource`1.get_Object()
+   at Atata.ObjectProvider`2.get_Object()
+   at Atata.ObjectProvider`2.Atata.IObjectProvider<TObject>.get_Object()
+   at Atata.IObjectProviderNumberExtensions.Get[TValue,TOwner](IObjectProvider`2 provider, TValue& value)
+   at AtataPetProject1.ProductTests.DeleteUsingBSModal() in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\ProductTests.cs:line 12
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+2024-05-21 15:59:36.296 TRACE - > Take screenshot #01 Failed
+2024-05-21 15:59:36.548 TRACE - < Take screenshot #01 Failed (0.251s) >> "01 Products page - Failed.png"
+2024-05-21 15:59:36.549 TRACE - > Take page snapshot #01 Failed
+2024-05-21 15:59:36.929 TRACE - < Take page snapshot #01 Failed (0.380s) >> "01 Products page - Failed.mhtml"
+2024-05-21 15:59:37.849 TRACE < Deinitialize AtataContext (1.599s)
+2024-05-21 15:59:37.857 DEBUG Finished test
+      Total time: 22.641s
+  Initialization:  5.650s | 25.0 %
+       Test body: 15.390s | 68.0 %
+Deinitialization:  1.600s |  7.1 %

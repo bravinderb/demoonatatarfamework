@@ -1,0 +1,28 @@
+2024-05-20 22:36:48.890 DEBUG Starting test: AtataPetProject1.SampleTests.SampleTest
+2024-05-20 22:36:49.080 TRACE > Initialize AtataContext
+2024-05-20 22:36:49.110 TRACE - Use: "Atata.json" config
+2024-05-20 22:36:49.112 TRACE - Use: "Atata.local.json" config
+2024-05-20 22:36:49.113 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-20 22:36:49.115 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-20 22:36:49.116 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-20 22:36:49.116 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-20 22:36:49.117 TRACE - Set: Culture=en-US
+2024-05-20 22:36:49.117 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240520T223648\SampleTests\SampleTest
+2024-05-20 22:36:49.118 TRACE - > Initialize Driver
+2024-05-20 22:36:49.125 TRACE - - Created ChromeDriverService { Port=56283, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-20 22:36:50.627 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=22ccdc6e87b14a7add321c01f04de9ac }
+2024-05-20 22:36:50.655 TRACE - < Initialize Driver (1.516s)
+2024-05-20 22:36:50.660 TRACE < Initialize AtataContext (1.579s)
+2024-05-20 22:36:50.748  INFO > Go to "Home" page by URL https://demo.atata.io/products
+2024-05-20 22:36:51.157  INFO < Go to "Home" page by URL https://demo.atata.io/products (0.409s)
+2024-05-20 22:36:51.168  INFO > Assert: title should contain "Atata Sample App"
+2024-05-20 22:36:51.181  INFO < Assert: title should contain "Atata Sample App" (0.013s)
+2024-05-20 22:36:51.182  INFO > Assert: title should contain "Products - Atata Sample App"
+2024-05-20 22:36:51.702  INFO < Assert: title should contain "Products - Atata Sample App" (0.519s)
+2024-05-20 22:36:51.705 TRACE > Deinitialize AtataContext
+2024-05-20 22:36:52.202 TRACE < Deinitialize AtataContext (0.496s)
+2024-05-20 22:36:52.208 DEBUG Finished test
+      Total time: 3.421s
+  Initialization: 1.878s | 54.9 %
+       Test body: 1.044s | 30.5 %
+Deinitialization: 0.498s | 14.6 %

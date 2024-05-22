@@ -1,0 +1,58 @@
+2024-05-21 18:59:54.182 DEBUG Starting test: AtataPetProject1.ProductTests.DeleteUsingBSModal
+2024-05-21 18:59:54.195 TRACE > Initialize AtataContext
+2024-05-21 18:59:54.196 TRACE - Use: "Atata.json" config
+2024-05-21 18:59:54.197 TRACE - Use: "Atata.local.json" config
+2024-05-21 18:59:54.197 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 18:59:54.198 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 18:59:54.198 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 18:59:54.199 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 18:59:54.199 TRACE - Set: Culture=en-US
+2024-05-21 18:59:54.200 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T185951\ProductTests\DeleteUsingBSModal
+2024-05-21 18:59:54.200 TRACE - > Initialize Driver
+2024-05-21 18:59:54.201 TRACE - - Created ChromeDriverService { Port=54926, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 18:59:56.167 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=82f93e94c69ee2fe53625e39e537fe15 }
+2024-05-21 18:59:56.169 TRACE - < Initialize Driver (1.968s)
+2024-05-21 18:59:56.170 TRACE < Initialize AtataContext (1.974s)
+2024-05-21 18:59:56.189  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-21 18:59:56.803  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.613s)
+2024-05-21 18:59:56.819 TRACE > Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page
+2024-05-21 18:59:56.826  INFO - > Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval
+2024-05-21 18:59:58.874  INFO - < Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval (2.048s)
+2024-05-21 18:59:58.875  INFO - > Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval
+2024-05-21 18:59:58.885  INFO - < Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval (0.009s)
+2024-05-21 18:59:58.885 TRACE < Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page (2.066s)
+2024-05-21 18:59:58.892 TRACE > Execute trigger VerifyTitleAttribute { Values=["Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page
+2024-05-21 18:59:58.900  INFO - > Assert: title should equal "Atata Sample App"
+2024-05-21 19:00:03.938 ERROR - - Wrong title
+Expected: "Atata Sample App"
+  Actual: "Products - Atata Sample App"
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IObjectVerificationProviderExtensions.<>c__DisplayClass5_0`2.<Satisfy>g__ExecuteVerification|0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.VerificationUtils.Verify[TData,TOwner](IObjectVerificationProvider`2 verifier, Action verificationAction, String expectedMessage, TData[] arguments)
+   at Atata.IObjectVerificationProviderExtensions.Satisfy[TObject,TOwner](IObjectVerificationProvider`2 verifier, Func`2 predicate, String message, TObject[] args)
+   at Atata.IObjectVerificationProviderExtensions.MatchAny[TOwner](IObjectVerificationProvider`2 verifier, TermMatch match, String[] expected)
+   at Atata.VerifyTitleAttribute.OnExecute[TOwner](TriggerContext`1 context, String[] values)
+   at Atata.TermVerificationTriggerAttribute.Execute[TOwner](TriggerContext`1 context)
+   at Atata.UIComponent`1.<>c__DisplayClass74_3.<ExecuteTriggers>b__3()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.UIComponent`1.ExecuteTriggers(TriggerEvents on)
+   at Atata.PageObject`1.CompleteInit()
+   at Atata.AtataNavigator.GoToInitialPageObject[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, GoOptions options)
+   at Atata.AtataNavigator.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at Atata.Go.To[T](T pageObject, String url, Boolean navigate, Boolean temporarily)
+   at AtataPetProject1.ProductTests.DeleteUsingBSModal() in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\ProductTests.cs:line 9
+2024-05-21 19:00:03.944  INFO - < Assert: title should equal "Atata Sample App" (5.043s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-21 19:00:03.944 TRACE < Execute trigger VerifyTitleAttribute { Values=["Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page (5.052s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-21 19:00:03.959 TRACE > Deinitialize AtataContext
+2024-05-21 19:00:03.989 TRACE - > Take screenshot #01 Failed
+2024-05-21 19:00:04.163 TRACE - < Take screenshot #01 Failed (0.173s) >> "01 Products page - Failed.png"
+2024-05-21 19:00:04.164 TRACE - > Take page snapshot #01 Failed
+2024-05-21 19:00:04.328 TRACE - < Take page snapshot #01 Failed (0.164s) >> "01 Products page - Failed.mhtml"
+2024-05-21 19:00:04.785 TRACE < Deinitialize AtataContext (0.826s)
+2024-05-21 19:00:04.790 DEBUG Finished test
+      Total time: 10.613s
+  Initialization:  1.998s | 18.8 %
+       Test body:  7.788s | 73.4 %
+Deinitialization:  0.827s |  7.8 %

@@ -1,0 +1,61 @@
+2024-05-22 00:32:39.350 DEBUG Starting test: AtataPetProject1.ProductTests.Validation_Required
+2024-05-22 00:32:39.499 TRACE > Initialize AtataContext
+2024-05-22 00:32:39.521 TRACE - Use: "Atata.json" config
+2024-05-22 00:32:39.521 TRACE - Use: "Atata.local.json" config
+2024-05-22 00:32:39.521 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-22 00:32:39.523 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-22 00:32:39.524 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-22 00:32:39.524 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-22 00:32:39.524 TRACE - Set: Culture=en-US
+2024-05-22 00:32:39.525 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240522T003239\ProductTests\Validation_Required
+2024-05-22 00:32:39.526 TRACE - > Initialize Driver
+2024-05-22 00:32:39.531 TRACE - - Created ChromeDriverService { Port=50656, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-22 00:32:40.610 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=af63676b6113ce34fa495abf2e3842a5 }
+2024-05-22 00:32:40.616 TRACE - < Initialize Driver (1.086s)
+2024-05-22 00:32:40.619 TRACE < Initialize AtataContext (1.119s)
+2024-05-22 00:32:40.699  INFO > Go to "Products" page by URL https://demo.atata.io/products
+2024-05-22 00:32:40.949  INFO < Go to "Products" page by URL https://demo.atata.io/products (0.250s)
+2024-05-22 00:32:40.968 TRACE > Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page
+2024-05-22 00:32:40.974  INFO - > Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval
+2024-05-22 00:32:42.999  INFO - < Wait until element by "loading-indicator" class is visible within 2s without throw on failure with 0.5s retry interval (2.024s)
+2024-05-22 00:32:43.001  INFO - > Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval
+2024-05-22 00:32:43.022  INFO - < Wait until element by "loading-indicator" class is missing or hidden within 10s with throw on failure with 0.5s retry interval (0.020s)
+2024-05-22 00:32:43.024 TRACE < Execute trigger WaitForLoadingIndicatorAttribute { WaitBy=Class, Selector="loading-indicator", ScopeSource=Parent, Until=VisibleThenMissingOrHidden, ThrowOnPresenceFailure=false, ThrowOnAbsenceFailure=true, PresenceTimeout=2, AbsenceTimeout=10, RetryInterval=0.5 } on Init against "Products" page (2.055s)
+2024-05-22 00:32:43.029 TRACE > Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page
+2024-05-22 00:32:43.039  INFO - > Assert: title should equal "Products - Atata Sample App"
+2024-05-22 00:32:43.049  INFO - < Assert: title should equal "Products - Atata Sample App" (0.009s)
+2024-05-22 00:32:43.050 TRACE < Execute trigger VerifyTitleAttribute { Values=["Products - Atata Sample App"], Case=Title, Match=Equals, Timeout=5, RetryInterval=0.5 } on Init against "Products" page (0.021s)
+2024-05-22 00:32:43.057  INFO > Aggregate assert "Products" page
+2024-05-22 00:32:43.059  INFO - > Assert: title should contain "Atata"
+2024-05-22 00:32:43.064  INFO - < Assert: title should contain "Atata" (0.005s)
+2024-05-22 00:32:43.067  INFO - > Assert: "Header" <h1> heading content should contain "Products"
+2024-05-22 00:32:43.071 TRACE - - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading
+2024-05-22 00:32:43.088 TRACE - - - > Find element by XPath ".//h1" in ChromeDriver
+2024-05-22 00:32:43.104 TRACE - - - < Find element by XPath ".//h1" in ChromeDriver (0.014s) >> Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.5 }
+2024-05-22 00:32:43.131 TRACE - - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Header" <h1> heading (0.059s) >> "Products"
+2024-05-22 00:32:43.136  INFO - < Assert: "Header" <h1> heading content should contain "Products" (0.069s)
+2024-05-22 00:32:43.137  INFO < Aggregate assert "Products" page (0.079s)
+2024-05-22 00:32:43.159  INFO > Assert: "Products" table / rows / [Amount == 50] item should be present
+2024-05-22 00:32:43.166 TRACE - > Find element by XPath ".//table" in ChromeDriver
+2024-05-22 00:32:43.181 TRACE - < Find element by XPath ".//table" in ChromeDriver (0.014s) >> Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.6 }
+2024-05-22 00:32:43.183 TRACE - > Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.6 }
+2024-05-22 00:32:43.197 TRACE - < Find elements by XPath ".//tr[parent::table or parent::tbody]" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.6 } (0.014s) >> [Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.7 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.8 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.9 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.10 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.11 }]
+2024-05-22 00:32:43.204 TRACE - > Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Amount" element
+2024-05-22 00:32:43.210 TRACE - - > Select column header texts of "Products" table
+2024-05-22 00:32:43.215 TRACE - - - > Find elements by XPath ".//th" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.6 }
+2024-05-22 00:32:43.229 TRACE - - - < Find elements by XPath ".//th" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.6 } (0.014s) >> [Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.12 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.13 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.14 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.15 }]
+2024-05-22 00:32:43.233 TRACE - - - > Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.12 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.13 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.14 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.15 }]
+2024-05-22 00:32:43.246 TRACE - - - < Execute script "var elements = arguments[0]; var textValues = []; for (var i = 0; i < elements.length; i++) { tex..." with argument: [Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.12 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.13 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.14 }, Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.15 }] (0.012s) >> ["Name", "Price", "Amount", ""]
+2024-05-22 00:32:43.247 TRACE - - < Select column header texts of "Products" table (0.037s) >> ["Name", "Price", "Amount", ""]
+2024-05-22 00:32:43.254 TRACE - - > Find element by XPath ".//td[3]/descendant-or-self::*" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.7 }
+2024-05-22 00:32:43.266 TRACE - - < Find element by XPath ".//td[3]/descendant-or-self::*" in Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.7 } (0.012s) >> Element { Id=f.F1B42949E5083483B926427AC11AED4E.d.8FC206CB2CE09C574D1A4FBB8E724E7C.e.16 }
+2024-05-22 00:32:43.276 TRACE - < Execute behavior GetsContentFromSourceAttribute { Source=Text } against "Products" table / rows / 1st item / "Amount" element (0.071s) >> "50"
+2024-05-22 00:32:43.280  INFO < Assert: "Products" table / rows / [Amount == 50] item should be present (0.121s)
+2024-05-22 00:32:43.281 TRACE > Deinitialize AtataContext
+2024-05-22 00:32:43.300 TRACE - Cleared column header texts cache of "Products" table
+2024-05-22 00:32:43.693 TRACE < Deinitialize AtataContext (0.411s)
+2024-05-22 00:32:43.697 DEBUG Finished test
+      Total time: 4.410s
+  Initialization: 1.337s | 30.3 %
+       Test body: 2.660s | 60.3 %
+Deinitialization: 0.412s |  9.4 %

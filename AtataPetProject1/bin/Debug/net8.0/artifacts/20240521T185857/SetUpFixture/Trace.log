@@ -1,0 +1,55 @@
+2024-05-21 18:58:57.614 DEBUG Starting test suite: AtataPetProject1.SetUpFixture
+2024-05-21 18:58:57.847 TRACE > Initialize AtataContext
+2024-05-21 18:58:57.883 TRACE - Use: "Atata.json" config
+2024-05-21 18:58:57.884 TRACE - Use: "Atata.local.json" config
+2024-05-21 18:58:57.884 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 18:58:57.889 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 18:58:57.890 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 18:58:57.890 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 18:58:57.891 TRACE - Set: Culture=en-US
+2024-05-21 18:58:57.891 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T185857\SetUpFixture
+2024-05-21 18:58:57.893 TRACE - > Initialize Driver
+2024-05-21 18:58:57.899 TRACE - - Created ChromeDriverService { Port=54577, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 18:58:59.451 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=5f2bdc286cbd506b46f62fa59d7614aa }
+2024-05-21 18:58:59.465 TRACE - < Initialize Driver (1.561s)
+2024-05-21 18:58:59.468 TRACE < Initialize AtataContext (1.620s)
+2024-05-21 18:58:59.566  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-21 18:58:59.940  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.374s)
+2024-05-21 18:58:59.958  INFO > Set "admin@mail.com" to "Email" text input
+2024-05-21 18:58:59.964 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input
+2024-05-21 18:58:59.971 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input
+2024-05-21 18:59:00.008 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver
+2024-05-21 18:59:00.091 TRACE - - - < Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver (0.082s) >> Element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.6 }
+2024-05-21 18:59:00.094 TRACE - - - > Clear element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.6 }
+2024-05-21 18:59:00.143 TRACE - - - < Clear element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.6 } (0.048s)
+2024-05-21 18:59:00.143 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input (0.171s)
+2024-05-21 18:59:00.144 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Email" text input
+2024-05-21 18:59:00.146 TRACE - - - > Send keys "admin@mail.com" to element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.6 }
+2024-05-21 18:59:00.265 TRACE - - - < Send keys "admin@mail.com" to element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.6 } (0.118s)
+2024-05-21 18:59:00.266 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Email" text input (0.121s)
+2024-05-21 18:59:00.266 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input (0.302s)
+2024-05-21 18:59:00.267  INFO < Set "admin@mail.com" to "Email" text input (0.308s)
+2024-05-21 18:59:00.268  INFO > Set "abc123" to "Password" password input
+2024-05-21 18:59:00.269 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input
+2024-05-21 18:59:00.272 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input
+2024-05-21 18:59:00.275 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Password']/@for]/descendant-or-self::input[@type='password'] | .//label[normalize-space(.) = 'Password']/descendant-or-self::input[@type='password'])" in ChromeDriver
+2024-05-21 18:59:00.289 TRACE - - - < Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Password']/@for]/descendant-or-self::input[@type='password'] | .//label[normalize-space(.) = 'Password']/descendant-or-self::input[@type='password'])" in ChromeDriver (0.013s) >> Element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.3 }
+2024-05-21 18:59:00.291 TRACE - - - > Clear element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.3 }
+2024-05-21 18:59:00.328 TRACE - - - < Clear element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.3 } (0.037s)
+2024-05-21 18:59:00.329 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Password" password input (0.057s)
+2024-05-21 18:59:00.330 TRACE - - > Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input
+2024-05-21 18:59:00.330 TRACE - - - > Send keys "abc123" to element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.3 }
+2024-05-21 18:59:00.409 TRACE - - - < Send keys "abc123" to element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.3 } (0.078s)
+2024-05-21 18:59:00.410 TRACE - - < Execute behavior TypesTextUsingSendKeysAttribute against "Password" password input (0.079s)
+2024-05-21 18:59:00.410 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Password" password input (0.141s)
+2024-05-21 18:59:00.410  INFO < Set "abc123" to "Password" password input (0.142s)
+2024-05-21 18:59:00.411  INFO > Click "Sign In" button
+2024-05-21 18:59:00.412 TRACE - > Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button
+2024-05-21 18:59:00.414 TRACE - - > Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver
+2024-05-21 18:59:00.429 TRACE - - < Find element by XPath ".//*[self::input[@type='button' or @type='submit' or @type='reset'] or self::button][normalize-space(.) = 'Sign In' or normalize-space(@value) = 'Sign In']" in ChromeDriver (0.014s) >> Element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.10 }
+2024-05-21 18:59:00.430 TRACE - - > Click element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.10 }
+2024-05-21 18:59:00.512 TRACE - - < Click element { Id=f.9B73C8EB0417AF27BF4C5646E6776860.d.57DA532B25306094901127E2DFD0198D.e.10 } (0.081s)
+2024-05-21 18:59:00.514 TRACE - < Execute behavior ClicksUsingClickMethodAttribute against "Sign In" button (0.101s)
+2024-05-21 18:59:00.515  INFO < Click "Sign In" button (0.104s)
+2024-05-21 18:59:00.536  INFO > Go to "Sign In" page
+2024-05-21 18:59:00.580  INFO < Go to "Sign In" page (0.044s)

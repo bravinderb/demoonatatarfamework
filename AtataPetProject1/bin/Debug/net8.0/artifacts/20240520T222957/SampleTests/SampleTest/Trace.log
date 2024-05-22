@@ -1,0 +1,40 @@
+2024-05-20 22:29:58.166 DEBUG Starting test: AtataPetProject1.SampleTests.SampleTest
+2024-05-20 22:29:58.363 TRACE > Initialize AtataContext
+2024-05-20 22:29:58.396 TRACE - Use: "Atata.json" config
+2024-05-20 22:29:58.397 TRACE - Use: "Atata.local.json" config
+2024-05-20 22:29:58.397 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-20 22:29:58.403 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-20 22:29:58.404 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-20 22:29:58.404 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-20 22:29:58.405 TRACE - Set: Culture=en-US
+2024-05-20 22:29:58.405 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240520T222957\SampleTests\SampleTest
+2024-05-20 22:29:58.407 TRACE - > Initialize Driver
+2024-05-20 22:29:58.414 TRACE - - Created ChromeDriverService { Port=55631, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-20 22:30:00.033 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=eb48a5c8d76cddc7c89d1053c785a598 }
+2024-05-20 22:30:00.043 TRACE - < Initialize Driver (1.629s)
+2024-05-20 22:30:00.046 TRACE < Initialize AtataContext (1.683s)
+2024-05-20 22:30:00.142  INFO > Go to "<ordinary>" page by URL https://demo.atata.io
+2024-05-20 22:30:00.639  INFO < Go to "<ordinary>" page by URL https://demo.atata.io (0.497s)
+2024-05-20 22:30:00.659  INFO > Assert: title should contain "Products - Atata Sample App"
+2024-05-20 22:30:05.705 ERROR - Wrong title
+Expected: should contain "Products - Atata Sample App"
+  Actual: "Atata Sample App"
+   at Atata.AssertionVerificationStrategy.ReportFailure(String message, Exception exception)
+   at Atata.IObjectVerificationProviderExtensions.<>c__DisplayClass5_0`2.<Satisfy>g__ExecuteVerification|0()
+   at Atata.LogManager.ExecuteSection(LogSection section, Action action)
+   at Atata.VerificationUtils.Verify[TData,TOwner](IObjectVerificationProvider`2 verifier, Action verificationAction, String expectedMessage, TData[] arguments)
+   at Atata.IObjectVerificationProviderExtensions.Satisfy[TObject,TOwner](IObjectVerificationProvider`2 verifier, Func`2 predicate, String message, TObject[] args)
+   at Atata.IObjectVerificationProviderExtensions.Contain[TOwner](IObjectVerificationProvider`2 verifier, String expected)
+   at AtataPetProject1.SampleTests.SampleTest() in C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\SampleTests.cs:line 7
+2024-05-20 22:30:05.713  INFO < Assert: title should contain "Products - Atata Sample App" (5.053s) >> NUnit.Framework.AssertionException: Wrong title...
+2024-05-20 22:30:05.727 TRACE > Deinitialize AtataContext
+2024-05-20 22:30:05.759 TRACE - > Take screenshot #01 Failed
+2024-05-20 22:30:05.914 TRACE - < Take screenshot #01 Failed (0.154s) >> "01 _ordinary_ page - Failed.png"
+2024-05-20 22:30:05.915 TRACE - > Take page snapshot #01 Failed
+2024-05-20 22:30:06.071 TRACE - < Take page snapshot #01 Failed (0.155s) >> "01 _ordinary_ page - Failed.mhtml"
+2024-05-20 22:30:06.665 TRACE < Deinitialize AtataContext (0.937s)
+2024-05-20 22:30:06.672 DEBUG Finished test
+      Total time: 8.588s
+  Initialization: 1.970s | 22.9 %
+       Test body: 5.679s | 66.1 %
+Deinitialization: 0.938s | 10.9 %

@@ -1,0 +1,21 @@
+2024-05-22 00:12:44.246 DEBUG Starting test suite: AtataPetProject1.SetUpFixture
+2024-05-22 00:12:44.385 TRACE > Initialize AtataContext
+2024-05-22 00:12:44.405 TRACE - Use: "Atata.json" config
+2024-05-22 00:12:44.406 TRACE - Use: "Atata.local.json" config
+2024-05-22 00:12:44.406 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-22 00:12:44.408 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-22 00:12:44.409 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-22 00:12:44.409 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-22 00:12:44.409 TRACE - Set: Culture=en-US
+2024-05-22 00:12:44.410 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240522T001244\SetUpFixture
+2024-05-22 00:12:44.411 TRACE - > Initialize Driver
+2024-05-22 00:12:44.416 TRACE - - Created ChromeDriverService { Port=65040, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-22 00:12:45.389 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=9c692d703c0df14599d7666d0e3c3a19 }
+2024-05-22 00:12:45.396 TRACE - < Initialize Driver (0.981s)
+2024-05-22 00:12:45.401 TRACE < Initialize AtataContext (1.016s)
+2024-05-22 00:12:45.450  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-22 00:12:45.638  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.187s)
+2024-05-22 00:12:45.652  INFO > Set "admin@mail.com" to "Email" text input
+2024-05-22 00:12:45.658 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input
+2024-05-22 00:12:45.661 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input
+2024-05-22 00:12:45.684 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver

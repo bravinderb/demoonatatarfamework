@@ -1,0 +1,17 @@
+2024-05-21 18:57:15.035 DEBUG Starting test suite: AtataPetProject1.SetUpFixture
+2024-05-21 18:57:15.156 TRACE > Initialize AtataContext
+2024-05-21 18:57:15.176 TRACE - Use: "Atata.json" config
+2024-05-21 18:57:15.176 TRACE - Use: "Atata.local.json" config
+2024-05-21 18:57:15.176 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 18:57:15.178 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 18:57:15.179 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 18:57:15.179 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 18:57:15.179 TRACE - Set: Culture=en-US
+2024-05-21 18:57:15.179 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T185714\SetUpFixture
+2024-05-21 18:57:15.181 TRACE - > Initialize Driver
+2024-05-21 18:57:15.189 TRACE - - Created ChromeDriverService { Port=53952, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 18:57:16.095 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=766a1b2603f5a9fd07df1a662a3d25dd }
+2024-05-21 18:57:16.102 TRACE - < Initialize Driver (0.915s)
+2024-05-21 18:57:16.103 TRACE < Initialize AtataContext (0.947s)
+2024-05-21 18:57:16.154  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-21 18:57:16.349  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (0.194s) >> System.InvalidCastException: Unable to cast object of type 'Atata.Button`2[AtataPetProjct1.ConfirmationPopups.ProductsPage,AtataPetProject1.CsvDataSource.UsersPage]' to type 'Atata.UIComponent`1[SignInPage]'.

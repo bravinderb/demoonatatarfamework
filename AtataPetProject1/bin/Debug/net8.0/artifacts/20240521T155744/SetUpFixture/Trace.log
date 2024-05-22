@@ -1,0 +1,25 @@
+2024-05-21 15:57:44.631 DEBUG Starting test suite: AtataPetProject1.SetUpFixture
+2024-05-21 15:57:45.041 TRACE > Initialize AtataContext
+2024-05-21 15:57:45.132 TRACE - Use: "Atata.json" config
+2024-05-21 15:57:45.134 TRACE - Use: "Atata.local.json" config
+2024-05-21 15:57:45.134 TRACE - Set: BaseUrl=https://demo.atata.io
+2024-05-21 15:57:45.142 TRACE - Set: ElementFindTimeout=5s; ElementFindRetryInterval=0.5s
+2024-05-21 15:57:45.143 TRACE - Set: WaitingTimeout=5s; WaitingRetryInterval=0.5s
+2024-05-21 15:57:45.143 TRACE - Set: VerificationTimeout=5s; VerificationRetryInterval=0.5s
+2024-05-21 15:57:45.144 TRACE - Set: Culture=en-US
+2024-05-21 15:57:45.145 TRACE - Set: Artifacts=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\artifacts\20240521T155744\SetUpFixture
+2024-05-21 15:57:45.149 TRACE - > Initialize Driver
+2024-05-21 15:57:45.176 TRACE - - Created ChromeDriverService { Port=53689, ExecutablePath=C:\Users\bingi.ravinder\Downloads\atata-samples-main\atata-samples-main\NUnit.GenericPageTests\AtataPetProject1\bin\Debug\net8.0\drivers\chrome\124.0.6367.207\chromedriver.exe }
+2024-05-21 15:57:50.921 TRACE - - Created ChromeDriver { Alias=chrome, SessionId=80cd51d6923fa1b869f1fa5bf93eae3e }
+2024-05-21 15:57:50.940 TRACE - < Initialize Driver (5.778s)
+2024-05-21 15:57:50.944 TRACE < Initialize AtataContext (5.902s)
+2024-05-21 15:57:51.053  INFO > Go to "Sign In" page by URL https://demo.atata.io/signin
+2024-05-21 15:57:57.626  INFO < Go to "Sign In" page by URL https://demo.atata.io/signin (6.572s)
+2024-05-21 15:57:57.648  INFO > Set "admin@mail.com" to "Email" text input
+2024-05-21 15:57:57.658 TRACE - > Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input
+2024-05-21 15:57:57.663 TRACE - - > Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input
+2024-05-21 15:57:57.704 TRACE - - - > Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver
+2024-05-21 15:58:02.742 TRACE - - - < Find element by XPath "(.//*[@id = //label[normalize-space(.) = 'Email']/@for]/descendant-or-self::input[@type='text' or not(@type)] | .//label[normalize-space(.) = 'Email']/descendant-or-self::input[@type='text' or not(@type)])" in ChromeDriver (5.037s) >> Atata.ElementNotFoundException: Unable to locate element:...
+2024-05-21 15:58:02.744 TRACE - - < Execute behavior ClearsValueUsingClearMethodAttribute against "Email" text input (5.080s) >> Atata.ElementNotFoundException: Unable to locate element:...
+2024-05-21 15:58:02.744 TRACE - < Execute behavior SetsValueUsingClearAndTypeBehaviorsAttribute against "Email" text input (5.086s) >> Atata.ElementNotFoundException: Unable to locate element:...
+2024-05-21 15:58:02.747  INFO < Set "admin@mail.com" to "Email" text input (5.098s) >> Atata.ElementNotFoundException: Unable to locate element:...
