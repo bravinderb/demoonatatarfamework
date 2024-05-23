@@ -5,14 +5,14 @@ namespace AtataPetProject1.CsvDataSource;
 
 using _ = UsersPage;
 
-public class UsersPage : Page<_>
+public class UsersPage : Page<UsersPage>
 {
     public Button<NewUserWindow, _> New { get; private set; }
 
     public Table<UserTableRow, _> Users { get; private set; }
 
     [FindByXPath("//a[@href='/products']")]
-    public Link<ProductsPage,_> productMenu { get; private set; }
+    public Link<ProductsPage,_> Products { get; private set; }
 
     public class UserTableRow : TableRow<_>
     {

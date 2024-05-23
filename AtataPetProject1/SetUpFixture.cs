@@ -26,6 +26,6 @@ public sealed class SetUpFixture
             .UseDriver(driverAlias);
 
         AtataContext.GlobalConfiguration.AutoSetUpDriverToUse();
-        Login();
+      //  Login();
     }
     }

@@ -1,6 +1,7 @@
 ﻿using AtataPetProject1;
 using AtataPetProject1.Triggers;
 using AtataPetProject1.ValidationMessagesVerification;
+using System.Globalization;
 
 namespace AtataPetProjct1.ConfirmationPopups;
 
@@ -27,8 +28,8 @@ public class ProductsPage : Page<ProductsPage>
     public class ProductTableRow : TableRow<_>
     {
         public Text<_> Name { get; private set; }
-
-        public Currency<_> Price { get; private set; }
+     
+       public Currency<_> Price { get; private set; }
 
         public Number<_> Amount { get; private set; }
 
@@ -38,5 +39,8 @@ public class ProductsPage : Page<ProductsPage>
         [WaitForLoadingIndicator(TriggerEvents.AfterClick)]
         [FindByContent("Delete Using BS Modal")]
         public ButtonDelegate<DeletionConfirmationBSModal<_>, _> DeleteUsingBSModal { get; private set; }
+
+
     }
+  
 }
